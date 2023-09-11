@@ -14,8 +14,8 @@ const Nav = () => {
         document.documentElement.classList.toggle('dark')
     },[toggleDark])
   return (
-      <header className='padding-x py-8 absolute z-10 w-full dark:bg-black '>
-          <nav className='flex justify-between items-center max-container'>
+      <header className='padding-x py-8 absolute z-50 w-full dark:bg-black '>
+          <nav className='flex justify-between items-center max-container '>
               <a href="/">
                   <img src={headerLogo} alt="logo" width={130} height={29} />
               </a>
@@ -25,7 +25,7 @@ const Nav = () => {
                   ))}
               </ul>
               <div className='flex ml-5 mr-7  leading-3 '>
-                  <h6 className='pr-5 flex font-montserrat  text-black dark:text-white '>Toggle Mode</h6>
+                  <h6 className='pr-5 flex font-montserrat  text-black dark:text-white max-sm:hidden'>Toggle Mode</h6>
                   <div>
                       {toggleDark
                           ? <CiLight onClick={() => setToggleDark(false)} className='dark:text-white' />
@@ -39,7 +39,7 @@ const Nav = () => {
                     {/* <span>/</span>
                     <a href='/'>Explore now</a> */}
               </div>
-              <div className='hidden max-lg:block'>
+              <div className='hidden max-lg:block  z-50'>
                   {toggleMenu
                     ? <RiCloseLine  size={27} onClick={() => setToggleMenu(false)}  />
                     :
@@ -47,10 +47,10 @@ const Nav = () => {
                   }
                   {
                         toggleMenu && (
-                            <div className='flex justify-end items-end flex-col p-2 absolute top-[70px] right-[0] min-w-[210px] rounded-[5px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent : scale-up-center dark:text-white'>
+                            <div className='flex justify-end items-end flex-col p-2 absolute top-[70px] right-[0] min-w-[210px] rounded-[5px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-white : scale-up-center dark:text-white dark:bg-black z-50'>
                             <div className=''>
                             {navLinks.map((item) => (
-                                <li key={item.label} className='list-none p-1'><a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray p-2   dark:text-white dark:z-10'>{item.label}</a></li>
+                                <li key={item.label} className='list-none p-1'><a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray p-2   dark:text-white dark:z-10 z-10'>{item.label}</a></li>
                             ))}
                                <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat wide:mr-24 max-lg:hidden max-sm:block max-sm:text-[15px]'>
                                 <a href='/'>Sign in</a>
