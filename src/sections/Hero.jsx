@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red max-sm:hidden  dark:text-white">Our Summer Collection</p>
         <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[20px] max-sm:leading-[20px] font-bold max-lg:text-[55px] dark:text-3xl">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10  dark:text-white dark:xl:bg-black  dark:z-100 ">The New Arrival</span>
+          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10  dark:text-white dark:xl:bg-black   ">The New Arrival</span>
           <br />
           <span className="text-coral-red inline-block mt-3 ">Nike</span> Shoes
         </h1>

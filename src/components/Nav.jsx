@@ -47,10 +47,10 @@ const Nav = () => {
                   }
                   {
                         toggleMenu && (
-                            <div className='flex justify-end items-end flex-col p-2 absolute top-[70px] right-[0] min-w-[210px] rounded-[5px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent : scale-up-center'>
+                            <div className='flex justify-end items-end flex-col p-2 absolute top-[70px] right-[0] min-w-[210px] rounded-[5px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent : scale-up-center dark:text-white'>
                             <div className=''>
                             {navLinks.map((item) => (
-                                <li key={item.label} className='list-none p-1'><a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray p-2 '>{item.label}</a></li>
+                                <li key={item.label} className='list-none p-1'><a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray p-2   dark:text-white dark:z-10'>{item.label}</a></li>
                             ))}
                                <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat wide:mr-24 max-lg:hidden max-sm:block max-sm:text-[15px]'>
                                 <a href='/'>Sign in</a>
